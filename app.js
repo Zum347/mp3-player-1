@@ -1,5 +1,3 @@
-/* elementlere ulasip obje olarak kullanma, yakalama*/
-
 const prevButton = document.getElementById('prev')
 const nextButton = document.getElementById('next')
 const repeatButton = document.getElementById('repeat')
@@ -65,7 +63,7 @@ const songsList = [
     }
 ]
 
-//time formatter
+
 const timeFormatter = (timeInput) =>{
     let minute = Math.floor(timeInput / 60)
     minute = minute < 10 ? "0" + minute : minute
@@ -74,10 +72,8 @@ const timeFormatter = (timeInput) =>{
     return `${minute}:${second}`
 }
 
-//sarki atama
 const setSong = (arrayIndex) => {
     let {name, link, artist, image} = songsList[arrayIndex]
-    //audio atanacak
     audio.src = link
     songName.innerHTML = name
     songArtist.innerHTML = artist
@@ -85,9 +81,9 @@ const setSong = (arrayIndex) => {
 
     audio.onloadeddata = () =>{
         maxDuration.innerText = timeFormatter(audio.duration)
-        //en fazla vakti ver max duration
+       
     }
-    //container eger gorunuyorsa yok et
+   
     playListContainer.classList.add('hide')
     playAudio()
 }
@@ -159,7 +155,6 @@ progressBar.addEventListener("click",(event) =>{
     playButton.classList.add('hide')
 })
 
-//karistir tiklanildiginda
 shuffleButton.addEventListener('click',()=>{
     if (shuffleButton.classList.contains('active')) {
         shuffleButton.classList.remove('active')
@@ -172,7 +167,6 @@ shuffleButton.addEventListener('click',()=>{
     }
 })
 
-//tekrar et butonu tiklanildiginda
 repeatButton.addEventListener('click',()=>{
     if (repeatButton.classList.contains('active')) {
         repeatButton.classList.remove('active')
@@ -239,5 +233,5 @@ window.onload = () =>{
     setSong(index)
     pauseAudio()
     initializePlayList()
-    //oynatma listesini ayarla
+    
 }

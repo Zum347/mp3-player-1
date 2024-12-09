@@ -15,21 +15,19 @@
 </head>
 <body>
     
-
-    <!--musik çalışısı-->
     <div class="music-player">
-        <!--oynatma listesi-->
+     
         <button id="playlist">
             <i class="fa-solid fa-angle-down"></i>
         </button>
-        <!--sarkici resmi-->
+    
         <img src="assets/ajda pekkan- eğlen güzelim.jpg" alt="" id="song-image">
-        <!--sarki detayi-->
+       
         <div class="song-details">
             <p id="song-name"></p>
             <p id="song-artist"></p>
         </div>
-        <!--oynatma secenekleri -->
+
         <div class="player-options">
             <button id="shuffle">
                 <i class="fa-solid fa-shuffle"></i>
@@ -51,18 +49,16 @@
             </button>
         </div>
 
-        <!--ses-->
         <audio id="audio" preload="metadata"></audio>
         <div id="progress-bar">
             <div id="current-progress"> </div>
         </div>
-        <!--zaman-->
+
         <div class="time-container">
             <span id="current-time">01.23</span>
             <span id="max-duration">04.21</span>
         </div>
 
-        <!--sarki listesi-->
         <div id="playlist-container">
             <button id="close-button">
                 <i class="fa-solid fa-xmark"></i>
@@ -73,7 +69,6 @@
 
     </div>
 
-    <!--scrtips-->
     <script src="app.js"></script>
 </body>
 </html>

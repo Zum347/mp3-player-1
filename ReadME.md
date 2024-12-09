@@ -15,4 +15,7 @@ Bu proje, JavaScript, CSS ve HTML kullanılarak oluşturulmuş bir MP3 oynatıc�
 - **CSS**: Uygulamanın stil ve düzenlemeleri için kullanıldı.
 - **JavaScript**: MP3 dosyalarını oynatmak ve kullanıcı etkileşimlerini yönetmek için kullanıldı.
 
+## Gif
+
+![Proje Tanıtım GIF'i](assets/Kayıt-2024-12-09-220254.gif)
 
