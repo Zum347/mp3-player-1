@@ -19,3 +19,5 @@ Bu proje, JavaScript, CSS ve HTML kullanılarak oluşturulmuş bir MP3 oynatıc�
 
 ![Proje Tanıtım GIF'i](assets/Kayıt-2024-12-09-220254.gif)
 
+
+
